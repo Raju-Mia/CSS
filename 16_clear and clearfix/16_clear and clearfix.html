@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+  text-align: justify;
+}
+
+.img1 {
+  float: left;
+   padding: 5px;
+}
+
+.img2 {
+  float: right;
+}
+
+
+/*If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:*/
+.clearfix {
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>Without Clearfix</h2>
+
+
+<div class="clearfix">
+  <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+
+
+<h2>With Clearfix</h2>
+<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+<div>
+  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+</body>
+</html>
+
+
