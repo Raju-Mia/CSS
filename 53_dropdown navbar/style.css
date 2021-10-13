@@ -1,0 +1,48 @@
+
+ul{
+	background: #1e89d5;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+}
+ul li{
+	float: left;
+	list-style-type: none;
+}
+
+ul li a{
+	color: black;
+	padding: 12px 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	display: inline-block;
+
+}
+ul li:hover{
+	background-color: blue;
+}
+
+.content{
+	background: #cde318e8;
+	display: none;
+	position: absolute;
+	box-shadow: 0 10px 20px 0;
+	min-width: 200px;
+
+}
+.content a{
+	display: block;
+	color: black;
+	overflow: hidden;
+
+}
+.content a:hover{
+	background-color: green;
+	text-align: center;
+	font-family: inherit;
+	font-size: 30px;
+}
+.more:hover .content{
+	display: block;
+}
